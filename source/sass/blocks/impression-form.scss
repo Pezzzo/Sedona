@@ -1,0 +1,83 @@
+.impression-form {
+  max-width: 320px;
+
+  @media (max-width: $mobile-only) {
+    max-width: 90%;
+  }
+}
+
+.impression-form__list {
+  margin-top: 18px;
+  margin-left: 98px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-top: 33px;
+    margin-left: 85px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 70px;
+    padding-top: 36px;
+  }
+}
+
+.impression-form__item:not(:last-child) {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+}
+
+.impression-form__data {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $primary-black;
+}
+
+.impression-form__input-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.impression-form__input-wrapper input {
+  display: none;
+}
+
+.impression-form__input + span::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  width: 55px;
+  height: 55px;
+  left: -76px;
+  background-color: $gray6;
+  border-radius: 50%;
+}
+
+.impression-form__input:hover + span::before {
+  background-color: $gray5-hover;
+}
+
+.impression-form__input:active + span::before {
+  background-color: $gray4-down;
+}
+
+.impression-form__input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: -21px;
+  width: 55px;
+  height: 55px;
+  left: -76px;
+  background: url("../img/Shape-radio-checked.svg") 50% 50% no-repeat;
+}
+
+.impression-form__input:checked:active + span::after {
+  opacity: 0.3;
+}

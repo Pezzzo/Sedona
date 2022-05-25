@@ -1,0 +1,224 @@
+.video-controls {
+  background-color: $gray6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.video-controls--wrapper {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 66px;
+  bottom: -67px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    left: 0;
+    height: 93px;
+    background-color: $black-opacity-60;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+  }
+}
+
+.video-player__slider--wrapper {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  background-color: $black-opacity-60;
+  padding-top: 17px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    bottom: 35px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.displayStatus {
+  color: white;
+  padding-top: 10px;
+}
+
+.positionBar {
+  position: absolute;
+  top: -3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.durationBar {
+  position: absolute;
+  left: 12%;
+  bottom: 20px;
+  width: 65%;
+  height: 3px;
+  background-color: $white-opacity-20;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 390px;
+    left: 92px;
+    bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 540px;
+  }
+}
+
+// .video-player__slider {
+//   position: absolute;
+//   left: 22px;
+//   bottom: 20px;
+//   appearance: none;
+//   width: 235px;
+//   height: 3px;
+//   background-color: $white-opacity-20;
+//   outline: none;
+//   cursor: pointer;
+
+//   &::-webkit-slider-thumb {
+//     appearance: none;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: $white;
+//     cursor: pointer;
+//   }
+
+//   &::-moz-range-thumb {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: $white;
+//     cursor: pointer;
+//   }
+
+//   @media (min-width: $tablet) {
+//     width: 390px;
+//     left: 92px;
+//     bottom: 10px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     width: 540px;
+//   }
+// }
+
+.repeat-control {
+  fill: $gray3;
+  position: absolute;
+  left: 23px;
+  bottom: 24px;
+  cursor: pointer;
+
+  &:hover {
+    fill: $secondary-black;
+  }
+
+  &:active {
+    fill: $secondary-black-30;
+  }
+
+  @media (min-width: $tablet) {
+    fill: $white;
+    left: 35px;
+    bottom: 38px;
+
+    &:hover {
+      fill: $white-opacity-60;
+    }
+
+    &:active {
+      fill: $white-opacity-30;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    left: 34px;
+    bottom: 38px;
+  }
+}
+
+.subtitles-control {
+  fill: $gray3;
+  position: absolute;
+  right: 74px;
+  bottom: 24px;
+  cursor: pointer;
+
+  &:hover {
+    fill: $secondary-black;
+  }
+
+  &:active {
+    fill: $secondary-black-30;
+  }
+
+  @media (min-width: $tablet) {
+    fill: $white;
+    right: 92px;
+    bottom: 36px;
+
+    &:hover {
+      fill: $white-opacity-60;
+    }
+
+    &:active {
+      fill: $white-opacity-30;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    right: 94px;
+    bottom: 36px;
+  }
+}
+
+.fullscreen-control {
+  fill: $gray3;
+  position: absolute;
+  right: 23px;
+  bottom: 24px;
+  cursor: pointer;
+
+  &:hover {
+    fill: $secondary-black;
+  }
+
+  &:active {
+    fill: $secondary-black-30;
+  }
+
+  @media (min-width: $tablet) {
+    fill: $white;
+    right: 40px;
+    bottom: 36px;
+
+    &:hover {
+      fill: $white-opacity-60;
+    }
+
+    &:active {
+      fill: $white-opacity-30;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    right: 42px;
+    bottom: 36px;
+  }
+}

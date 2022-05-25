@@ -1,0 +1,28 @@
+.button {
+  background-color: $blue1;
+  color: $white;
+  font-weight: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  cursor: pointer;
+  border-style: none;
+  text-transform: uppercase;
+}
+
+.button-disabled {
+  background-color: $gray5-hover;
+  color: $white;
+}
+
+.button-condition {
+  &:hover {
+    background-color: $blue2-hover;
+  }
+
+  &:active {
+    background-color: $blue3-down;
+    color: $white-opacity-30;
+  }
+}

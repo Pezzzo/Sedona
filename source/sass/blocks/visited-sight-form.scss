@@ -1,0 +1,117 @@
+.visited-sight-form__item {
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 63px;
+  }
+}
+
+.visited-sight-form__data {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $primary-black;
+}
+
+.visited-sight-form {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+  }
+}
+
+.visited-sight-form__list {
+  margin-top: 16px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    width: 410px;
+    padding-top: 25px;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 113px;
+    margin-left: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    width: 880px;
+    column-gap: 128px;
+    margin-left: 80px;
+    margin-top: 18px;
+  }
+}
+
+.visited-sight-form__list .visited-sight-form__item:last-child {
+  margin-bottom: 39px;
+}
+
+.visited-sight-form__list .visited-sight-form__item:nth-child(3) {
+  padding-left: 1px;
+
+  @media (min-width: $desktop) {
+    padding-left: 12px;
+  }
+}
+
+.visited-sight-form__list .visited-sight-form__item:nth-child(2) {
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 7px;
+  }
+}
+
+.visited-sight-form__input-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.visited-sight-form__input-wrapper input {
+  display: none;
+}
+
+.visited-sight-form__input + span::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 55px;
+  height: 55px;
+  left: -80px;
+  background-color: $gray6;
+  border-radius: 10%;
+}
+
+.visited-sight-form__input:hover + span::before {
+  background-color: $gray5-hover;
+}
+
+.visited-sight-form__input:active + span::before {
+  background-color: $gray4-down;
+}
+
+.visited-sight-form__input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 55px;
+  height: 55px;
+  left: -80px;
+  background: url("../img/Shape-checkbox-checked.svg") 50% 50% no-repeat;
+}
+
+.visited-sight-form__input:checked:active + span::after {
+  opacity: 0.3;
+}

@@ -1,0 +1,15 @@
+.video-gallery-wrapper {
+  margin: 0 auto;
+  width: 320px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    margin-bottom: 84px;
+  }
+}

@@ -1,0 +1,127 @@
+.header-menu__logo {
+  position: absolute;
+  width: 102px;
+  height: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -28px;
+  z-index: 2;
+
+  @media (min-width: $desktop) {
+    width: 186px;
+    height: 96px;
+    bottom: -40px;
+  }
+}
+
+.header__welcome-title {
+  position: relative;
+  text-align: center;
+  height: 389px;
+  background: $gray1 url("../img/back-desktop.jpg") 50% 30% no-repeat;
+
+
+  @media (min-resolution: 2dppx) {
+    background: $gray1 url("../img/back-desktop@2x.jpg") 50% 30% no-repeat;
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: $tablet) {
+    height: 518px;
+    background: $gray1 url("../img/back-desktop.jpg") 50% 100% no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: $gray1 url("../img/back-desktop@2x.jpg") 50% 30% no-repeat;
+      background-size: 1200px auto;
+    }
+  }
+}
+
+.header__welcome-title-size {
+  position: relative;
+  text-align: center;
+  height: 158px;
+  background: $gray1 url("../img/back-desktop-f-c.jpg") 50% 86% no-repeat;
+
+
+  @media (min-resolution: 2dppx) {
+    background: $gray1 url("../img/back-desktop-f-c@2x.jpg") 50% 86% no-repeat;
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: $tablet) {
+    height: 290px;
+    background: $gray1 url("../img/back-desktop-f-c.jpg") 50% 100% no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: $gray1 url("../img/back-desktop-f-c@2x.jpg") 50% 100% no-repeat;
+      background-size: 1200px auto;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    height: 301px;
+  }
+}
+
+.header__welcome-title-size::after,
+.header__welcome-title::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 57px;
+  width: 100%;
+  background: url("../img/intro-triangle.svg") 50% 100% no-repeat;
+}
+
+.header__welcome-title-img--position {
+  padding-top: 90px;
+
+  @media (min-width: $tablet) {
+    padding-top: 78px;
+  }
+}
+
+.header__welcome-title-img--position2 {
+  padding-top: 52px;
+
+  @media (min-width: $tablet) {
+    padding-top: 95px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+  }
+}
+
+.header__welcome-title-img {
+  @media (min-width: $tablet) {
+    width: 460px;
+    height: 180px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 460px;
+    height: 185px;
+  }
+
+  &--index {
+    @media (min-width: $tablet) {
+      width: 460px;
+      height: 420px;
+    }
+  }
+}
+
+.header-menu__item a {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

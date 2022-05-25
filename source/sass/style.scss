@@ -1,0 +1,43 @@
+// normalise
+@import "global/normalise.scss";
+// Variables
+@import "global/variables.scss";
+
+// Global, Colors
+@import "global/colors.scss";
+@import "global/global.scss";
+@import "global/buttons.scss";
+@import "global/fonts.scss";
+
+// Blocks
+@import "blocks/description.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/header.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/footer-social.scss";
+// index blocks
+@import "blocks/advantages-content.scss";
+@import "blocks/content-description.scss";
+@import "blocks/content-img.scss";
+@import "blocks/content-features.scss";
+@import "blocks/hotel-search.scss";
+
+// form blocks
+@import "blocks/feedback-form.scss";
+@import "blocks/personal-data-form.scss";
+@import "blocks/contact-form.scss";
+@import "blocks/impression-form.scss";
+@import "blocks/visited-sight-form.scss";
+@import "blocks/emotion-form.scss";
+@import "blocks/modal-popup.scss";
+@import "blocks/modal-failure.scss";
+@import "blocks/modal-success.scss";
+
+// catalog blocks
+
+@import "blocks/photo-content.scss";
+@import "blocks/video-gallery.scss";
+@import "blocks/video-content.scss";
+@import "blocks/video-controls.scss";
