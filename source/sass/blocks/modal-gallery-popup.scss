@@ -1,0 +1,40 @@
+.modal-section {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.arrow-back {
+  left: -100px;
+  top: 50%;
+  transform: rotate(180deg);
+}
+
+.arrow-forward {
+  right: -100px;
+  top: 50%;
+}
+
+.modal {
+  display: none;
+}
+
+.shown {
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  z-index: 200;
+}
+
+.modal-popup__img {
+  width: 800px;
+  z-index: 10;
+
+  object-fit: cover;
+}
