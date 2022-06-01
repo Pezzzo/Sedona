@@ -13,7 +13,7 @@ const modalImg = document.querySelector('.modal-popup__img');
 const imgContainer = document.querySelector('.photo-gallery');
 const html = document.querySelector('.page');
 const closeModalButton = document.querySelector('.modal-popup__close-button');
-const imgContent = document.querySelectorAll('.photo-content__img');
+// const imgContent = document.querySelectorAll('.photo-content__img');
 
 // состояние скролла
 const disableScrolling = () => {
