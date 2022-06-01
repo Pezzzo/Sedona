@@ -3,6 +3,8 @@
 }
 
 .modal-popup__arrow {
+  border: none;
+  background: none;
   position: absolute;
   cursor: pointer;
   overflow: hidden;
@@ -21,13 +23,21 @@
 .modal-popup__arrow-back {
   left: -100px;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .modal-popup__arrow-forward {
   right: -100px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.reverse {
+  transform: rotate(180deg);
 }
 
 .modal {
