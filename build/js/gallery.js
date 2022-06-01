@@ -1,19 +1,14 @@
 'use strict';
 
-const images = [
-  'photo-1.jpg',
-  'photo-2-desktop.jpg',
-  'photo-3-desktop.jpg',
-  'photo-4-desktop.jpg',
-];
-
-
 const modal = document.querySelector('.modal');
 const modalImg = document.querySelector('.modal-popup__img');
 const imgContainer = document.querySelector('.photo-gallery');
 const html = document.querySelector('.page');
 const closeModalButton = document.querySelector('.modal-popup__close-button');
 const imgContent = document.querySelectorAll('.photo-content__img');
+// const imgPopup = document.querySelector('.modal-popup__img');
+
+
 
 // состояние скролла
 const disableScrolling = () => {
@@ -27,16 +22,28 @@ const enableScrolling = () => {
 };
 
 // рендер
-// const renderModal = () => {
+const renderModalImg = (evt) => {
+  const arrowBack = evt.target.closest('.modal-popup__arrow-back');
+  const arrowforward = evt.target.closest('.modal-popup__arrow-forward');
 
-// }
-
-modal.addEventListener('click', (evt) => {
-  const arrow = evt.target.closest('.arrow');
-  if (arrow) {
-    console.log('qwqwqw')
+  if (arrowforward) {
+    for (let i = 0; i < imgContent.length; i++) {
+      if (i === imgContent.length-1) {
+        return
+      }
+      if (imgContent[i].src === modalImg.src) {
+        modalImg.src = imgContent[i+=1].src
+      }
+    }
   }
-});
+  if (arrowBack) {
+    for (let i = 1; i < imgContent.length; i++) {
+      if (imgContent[i].src === modalImg.src) {
+        modalImg.src = imgContent[i-=1].src
+      }
+    }
+  }
+};
 
 // открытие и закрытие попапа
 const openModalHandler = (evt) => {
@@ -47,10 +54,7 @@ const openModalHandler = (evt) => {
     html.classList.add('page--modal-open');
     disableScrolling();
   }
-  modalImg.src = `img/${images[1]}`;
-  // modalImg.src = imgContent.src;
-
-
+  modalImg.src = img.src;
 };
 
 const closeModalMouseHandler = (evt) => {
@@ -71,14 +75,11 @@ const closeModalKeyHandler = (evt) => {
   }
 };
 
-
-
-
-
 const popap = () => {
   imgContainer.addEventListener('click', openModalHandler);
   closeModalButton.addEventListener('click', closeModalMouseHandler);
-  window.addEventListener('keydown', closeModalKeyHandler)
+  window.addEventListener('keydown', closeModalKeyHandler);
+  modal.addEventListener('click', (renderModalImg));
 }
 
 popap();

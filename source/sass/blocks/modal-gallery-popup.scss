@@ -20,13 +20,13 @@
 
 .modal-popup__arrow-back {
   left: -100px;
-  top: 50%;
+  top: 40%;
   transform: rotate(180deg);
 }
 
 .modal-popup__arrow-forward {
   right: -100px;
-  top: 50%;
+  top: 40%;
 }
 
 .modal {
@@ -55,9 +55,10 @@
   background: none;
   cursor: pointer;
   opacity: 0.2;
-  top: -80px;
-  right: -80px;
+  top: -60px;
+  right: -60px;
   transition: 0.5s;
+  width: 60px;
 
   &:hover {
     opacity: 1;
