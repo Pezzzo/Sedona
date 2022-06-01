@@ -2,19 +2,29 @@
   position: relative;
 }
 
-.arrow {
+.modal-popup__arrow {
   position: absolute;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0.4;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.arrow-back {
+.modal-popup__arrow-back {
   left: -100px;
   top: 50%;
   transform: rotate(180deg);
 }
 
-.arrow-forward {
+.modal-popup__arrow-forward {
   right: -100px;
   top: 50%;
 }
@@ -37,4 +47,23 @@
   z-index: 10;
 
   object-fit: cover;
+}
+
+.modal-popup__close-button {
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.2;
+  top: -80px;
+  right: -80px;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

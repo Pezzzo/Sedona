@@ -2,11 +2,7 @@
   height: 100%;
   width: 100%;
   max-width: 100%;
-  // overflow-x: hidden;
-}
-
-.page--modal-open {
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .page--modal-open::before {
