@@ -20,13 +20,14 @@
 
 .modal-popup__arrow-back {
   left: -100px;
-  top: 40%;
-  transform: rotate(180deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .modal-popup__arrow-forward {
   right: -100px;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal {
@@ -37,8 +38,8 @@
   display: block;
   position: fixed;
   left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   z-index: 200;
 }
 
